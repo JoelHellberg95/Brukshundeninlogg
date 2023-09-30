@@ -1,4 +1,6 @@
+/*Importerar Poppins font i olika vikter*/
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
+/*Mina färger samlade i ett root element*/
 :root{
     --light-gray: #d6e2f0;
     --grayish-blue: #7b879d;
@@ -12,12 +14,15 @@
     --light-red:rgb(231, 104, 104);
     --red:red;
 }
+/*Sätter hela sidans fontfamily*/
 *{
     font-family: Poppins, sans-serif;
 }
+/*Bakgrund*/
 body{
     background-color: var(--very-light-grey);
 }
+/*Text styling*/
 h1{
     text-align: center;
     padding-top: 10vh;
@@ -26,6 +31,7 @@ h1{
 h4{
     padding-left:25px;
 }
+/*Inloggnings formuläret*/
 .form-login {
     background-color:var(--white);
     max-width: 500px;
@@ -40,6 +46,7 @@ h4{
     width: 290px;
     padding: 5px;
 }
+/*Förhållningsregler*/
 .container-coc {
     background-color: var(--white);
     width: fit-content;
@@ -49,12 +56,14 @@ h4{
     margin: auto;
     margin-top: 5vh;
 }
+/*Knapparna*/
 #logoutBtn{
     display: none;    
 }
 #resetBtn{
     display: none;
 }
+/*Felmeddelande & Välkommen*/
 .message{
     display: block;
     margin: 12px auto;
@@ -64,7 +73,7 @@ h4{
     padding: 10px auto;
     color: var(--red);
 }
-
+/*Knapparnas huvud klass*/
 button {
     background-color:var(--dark-blue);
     color:var(--white);
@@ -74,6 +83,7 @@ button {
 button:hover {
     background-color:var(--grayish-blue);
 }
+/*Stylar fält och knappar*/
 input,button {
     display: block;
     margin: 12px auto;

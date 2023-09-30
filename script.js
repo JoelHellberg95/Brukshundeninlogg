@@ -2,7 +2,7 @@
 const correctUsername = "Bella";
 const correctPassword = "qwe123";
 
-// användarens input och element från html
+// användarens input och element från DOM
 const usernameInput = document.getElementById("name");
 const passwordInput = document.getElementById("password");
 const loginBtn = document.getElementById("loginBtn");
@@ -20,7 +20,7 @@ if (loggedInUser) {
 }
 
 //Funktion för att titta om användarens input stämmer med det korrekta användarnamnet och lösenordet.
-//Om det skulle vara fel så visas ett felmeddelande istället och en Återställ knapp dyker upp.
+//Om det skulle vara fel så visas ett felmeddelande istället och en återställ knapp dyker upp.
 loginBtn.addEventListener("click", function() {
     const enteredUsername = usernameInput.value;
     const enteredPassword = passwordInput.value;
@@ -64,7 +64,7 @@ function showLoggedInMessage() {
     message.style.backgroundColor = "var(--dark-blue)";
 }
 
-//Funktion för att visa upp meddelanden
+//Funktion för att visa upp meddelanden som t.ex. Välkommen eller Felmeddelande.
 function showMessage(msg) {
     message.innerText = msg;   
 }
