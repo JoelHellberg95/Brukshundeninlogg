@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
 :root{
     --light-gray: #d6e2f0;
     --grayish-blue: #7b879d;
@@ -10,6 +11,9 @@
     --white: #f1f1f1;
     --light-red:rgb(231, 104, 104);
     --red:red;
+}
+*{
+    font-family: Poppins, sans-serif;
 }
 body{
     background-color: var(--very-light-grey);

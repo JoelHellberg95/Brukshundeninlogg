@@ -57,7 +57,7 @@ function showLoginForm() {
 //Funktion för att visa inloggad meddelandet och byta ut knappen(samt färger).
 function showLoggedInMessage() {
     const loggedInUser = localStorage.getItem("loggedInUser");
-    message.innerText = `Välkommen,Du är nu inloggad.`;
+    message.innerText = `Välkommen, Du är nu inloggad.`;
     loginBtn.style.display = "none";
     logoutBtn.style.display = "block";
     message.style.color = "var(--white)";
